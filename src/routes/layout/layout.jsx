@@ -25,7 +25,7 @@ function RequireAuth() {
     return (
       <div className="layout">
         <div className="navbar">
-          {/* <Navbar /> */}
+          <Navbar />
         </div>
         <div className="content">
           <Outlet />
