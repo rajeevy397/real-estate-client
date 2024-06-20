@@ -19,7 +19,7 @@ function Navbar() {
       <div className="left">
         <a href="/" className="logo">
           <img src="/logo.png" alt="" />
-          <span>LamaEstate</span>
+          <span>RealEstate</span>
         </a>
         <a href="/">Home</a>
         <a href="/">About</a>
@@ -38,7 +38,9 @@ function Navbar() {
           </div>
         ) : (
           <>
-            <a href="/login">Sign in</a>
+            <a href="/login" className="signIn">
+              Sign in
+            </a>
             <a href="/register" className="register">
               Sign up
             </a>

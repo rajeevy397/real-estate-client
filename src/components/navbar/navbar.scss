@@ -1,4 +1,4 @@
-@import "../../responsive.scss";
+@import '../../responsive.scss';
 
 nav {
   height: 100px;
@@ -63,12 +63,12 @@ nav {
       margin: 20px;
     }
 
-    .user{
+    .user {
       display: flex;
       align-items: center;
       font-weight: bold;
 
-      img{
+      img {
         width: 40px;
         height: 40px;
         border-radius: 50%;
@@ -76,21 +76,21 @@ nav {
         margin-right: 20px;
       }
 
-      span{
-        @include sm{
+      span {
+        @include sm {
           display: none;
         }
       }
 
-      .profile{
+      .profile {
         padding: 12px 24px;
         background-color: #fece51;
         cursor: pointer;
         border: none;
         position: relative;
         z-index: 999;
-        
-        .notification{
+
+        .notification {
           position: absolute;
           top: -8px;
           right: -8px;
@@ -103,7 +103,6 @@ nav {
           align-items: center;
           justify-content: center;
         }
-
       }
     }
 
@@ -115,14 +114,16 @@ nav {
       cursor: pointer;
       z-index: 999;
     }
+    .signIn {
+      z-index: 999;
+    }
 
-    .login{
+    .login {
       background-color: green;
       height: auto;
       width: auto;
       border-radius: 5px;
       cursor: pointer;
-      z-index: 999;
     }
 
     .menuIcon {

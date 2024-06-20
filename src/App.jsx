@@ -13,6 +13,7 @@ import {
   profilePageLoader,
   singlePageLoader,
 } from './lib/loaders';
+import Success from './components/Success';
 
 function App() {
   const router = createBrowserRouter([
@@ -38,6 +39,10 @@ function App() {
         {
           path: '/login',
           element: <Login />,
+        },
+        {
+          path: '/success',
+          element: <Success />,
         },
         {
           path: '/register',

@@ -12,6 +12,10 @@ function Login() {
   
   const { updateUser } = useContext(AuthContext);
 
+  const handleGoogleLogin = () => {
+    window.location.href = 'http://localhost:8800/auth/google';
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("")
@@ -67,6 +71,9 @@ function Login() {
           <button disabled={isLoading}>Login</button>
           {error && <span>{error}</span>}
           <Link to="/register">{"Don't"} you have an account?</Link>
+      <div>
+        <button onClick={handleGoogleLogin}>Sign in with Google</button>
+      </div>
         </form>
       </div>
       <div className="imgContainer">
