@@ -13,7 +13,7 @@ import {
   profilePageLoader,
   singlePageLoader,
 } from './lib/loaders';
-import Success from './components/Success';
+import GoogleLoginRedirect from './components/GoogleLoginRedirect';
 
 function App() {
   const router = createBrowserRouter([
@@ -41,12 +41,12 @@ function App() {
           element: <Login />,
         },
         {
-          path: '/success',
-          element: <Success />,
-        },
-        {
           path: '/register',
           element: <Register />,
+        },
+        {
+          path: '/google-redirect',
+          element: <GoogleLoginRedirect />,
         },
       ],
     },
